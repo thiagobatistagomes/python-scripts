@@ -3,6 +3,7 @@
 
 print('====== DESAFIO 06 ======')
 n = int(input('Digite um numero inteiro: '))
-print('Dobro: {}\nTriplo: {}\nRaiz Quadrada: {:.2f}'.format(n * 2, n * 3, n ** (1/2)))
+print('Dobro: {}\nTriplo: {}\nRaiz Quadrada: {:.2f}'.format((n * 2), (n * 3), (n ** (1/2))))
 
 #print('Dobro: {}\nTriplo: {}\nRaiz Quadrada: {}'.format(n * 2, n * 3, math.sqrt(n)))
+#print('Dobro: {}\nTriplo: {}\nRaiz Quadrada: {:.2f}'.format((n * 2), (n * 3), pow(n, 1/2)))
