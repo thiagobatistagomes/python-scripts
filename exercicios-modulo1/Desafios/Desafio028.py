@@ -1,13 +1,16 @@
 # Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
-import random
+from random import randint
+from time import sleep
 print('====== DESAFIO 28 ======')
 print('Jogo de adivinhação!')
-print('Tente adivinhar qual número o computador escolheu entre 0 a 5!')
-print('=' * 24)
-n = random.randint(0, 5)
-print('Pensei em um número!')
-escolha = int(input('Tente adivinhar qual é o número: '))
+print('-=-' * 20)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar!')
+print('-=-' * 20)
+n = randint(0, 5)
+escolha = int(input('Em que número eu pensei: '))
+print('PROCESSANDO...')
+sleep(2)
 if escolha == n:
-    print('Parabéns, o número escolhido foi {} e você acertou!'.format(n))
+    print('Humano tolo! Você conseguiu me vencer, mas a que preço?')
 else:
-    print('O número escolhido foi {}, e infelizmente você não acertou!'.format(n))
+    print('Como esperado voce não é capaz de me vencer! Pensei no número {}, e não {}.'.format(n, escolha))
